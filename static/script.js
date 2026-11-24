@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 const { user_choice, computer_choice, result, user_score, computer_score } = data;
                 resultDiv.innerHTML = `You chose ${user_choice}, computer chose ${computer_choice}. You ${result}!`;
-                scoreDiv.innerHTML = `${user_score}:${computer_score}.`;
+                scoreDiv.innerHTML = `${user_score}:${computer_score}`;
 
             });
         });
