@@ -50,3 +50,30 @@ h1 {
     font-size: 22px;
     font-weight: bold;
 }
+
+#score {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.choice { margin: 6px; font-size: 44px; }
+
+.scoreboard {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.scoreboard .label { font-size: 16px; opacity: 0.8; }
+#score { font-size: 28px; font-weight: bold; }
+#favourite { margin-top: 15px; font-size: 16px; opacity: 0.8; }
+
+#result.win { color: #4cd964; animation: pop 0.5s; }
+#result.lose { color: #ff5c5c; animation: shake 0.5s; }
+#result.draw { color: #ffd60a; animation: fade 0.5s; }
+
+@keyframes pop { 0% { transform: scale(0.8); } 50% { transform: scale(1.25); } 100% { transform: scale(1); } }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
+@keyframes fade { from { opacity: 0.2; } to { opacity: 1; } }
